@@ -59,11 +59,7 @@ class Controller{
 }
 		
 			
-class Model{
-		constructor(){
-		console.log("Model created");
-	}
-}
+
 class View{
 		constructor(){
 		console.log("View created");
@@ -109,10 +105,7 @@ function processTeam(te){
 function allToons(toons){
 	sessionStorage.setItem("loadedToons",JSON.stringify(charArray));
 }
-function detailClick(p){
-	sessionStorage.setItem("detailToon", JSON.stringify(charArray[p]));
-	
-}
+
 						  
 
 

@@ -39,7 +39,7 @@ function teamDisplay(g){
 			for(var i = 0; i < g.length; i++){
 			let dis = '';
 			dis+='<article>';
-			dis+='<img src = http://render-us.worldofwarcraft.com/character/'+g[i].thumb+'>';
+			dis+='<a href="Details.html"><img src = "http://render-us.worldofwarcraft.com/character/'+g[i].thumb+'" onclick="detailClick('+i+')"></a>';
 			dis+='<h3>'+g[i].nam+'</h3>';
 			dis+='<h4>'+g[i].clas+'</h4>';
 			dis+='<p>'+g[i].realm+'</p>';

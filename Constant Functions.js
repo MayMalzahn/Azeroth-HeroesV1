@@ -72,4 +72,7 @@ function getTalents(nam,realm){
 		})
 			}
 
-		
+		function detailClick(p){
+	sessionStorage.setItem("detailToon", JSON.stringify(charArray[p]));
+	
+}
