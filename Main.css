@@ -1,3 +1,59 @@
 @charset "utf-8";
 /* CSS Document */
+html{margin: 0;padding:0;height: 100%;position: relative;}
+header,footer{background-color: black;color:white;display: inline-block;width: 100%;height: 50px;position:absolute;}
+header{top:0;border-bottom: thick ridge rebeccapurple}
+footer{height: 100px;position: absolute;bottom: 0;padding-bottom: 0;margin-bottom: 0; border-top: thick ridge rebeccapurple;}
+footer img{border-left:thin double palegoldenrod;width: 100px;}
+body{background-color:#333333;color:azure;}
+img.small{width:auto;}
+img.smallSet{width:50px;}
+article{background-color:black;color:white;margin:15px;border-radius: 10px; border:thick groove #8835A7;}
+.port{border: thick double #696B1E;border-radius: 10px;}
+ul{list-style: none;bottom:0;}
+.warrior{color:saddlebrown;}
+.mage{color:cornflowerblue}
+.monk{color:mediumseagreen}
+.paladin{color:lightpink}
+.hunter{color:forestgreen}
+.rogue{color:yellow}
+.priest{color:palegoldenrod}
+.dk{color:red}
+.shaman{color:royalblue}
+.warlock{color:mediumpurple}
+.druid{color:coral}
+.dh{color:rebeccapurple}
+.del{background-color: red}
+.add{background-color:lawngreen}
+.port{margin-top: 5px;}
+.btn{font-weight: bold;margin-bottom: 0;border:thin solid black}
+.findBtn{background-color:black;color:white;height:30px;margin-left: 15px;}
+.inp{margin-left: 15px;}
+.nav-link{height: 45%;padding-top: 0;background-color:palegoldenrod;border:thin solid black;color:black;}
+.headLogo{object-fit:cover;height: 50px;}
+.main-container{min-height: 100vh;overflow: hidden;display: block;position: relative;padding-bottom: 200px;padding-top: 50px;}
+@media(max-width:370px){
+	header{
+		font-size:1em;
+	}
+}
+@media(max-width:760px){
+	h1{
+		font-size:1.5em;
+	}
+	.btn{
+		font-size:.5em;
+	}
+	#inputForm{
+		flex-direction: column;
+		width: 50%;
+		margin: auto;
+		
+	}
+	#input button{
+		margin: auto;
+		width: 50%;
+	}
+}
+
 

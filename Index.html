@@ -7,37 +7,42 @@
 		<link rel="stylesheet" href="Main.css">
 		<title>Main</title>
 	</head>
-	<header>
-		<img src="img/logo.jpg" alt="Logo">
-		<h1>Azeroth Hero Tracker</h1>
-		<nav>
-			<a href="Index.html">Home</a>
-			<a href="Team.html">Team</a>
+	<div class="main-container">
+	<header class="d-flex justify-content-between">
+		<img class="headLogo rounded-circle " src="img/logo.jpg" alt="Logo">
+		<h1 class="">Azeroth Hero Tracker</h1>
+		<nav class="nav nav-pills flex-column ">
+			<a class="nav-link" href="Index.html">Home</a>
+			<a class="nav-link" href="Team.html">Team</a>
 		</nav>
 	</header>
 	<body>
-		<h2>Your Heroes</h2>
-		<section id="input">
-			<form method="post" action="">
-				<p>
+		<h2 class="text-center">Your Heroes</h2>
+		<section  id="input">
+			<form class="d-flex justify-content-center" id="inputForm" method="post" action="">
+				<p class="inp">
 					<label for="name">Character Name</label>
 					<input type="text" name="name" id="name" class="required" placeholder="Maethrya" />
 				</p>
-				<p>
+				<p class="inp">
 					<label for="realm">Realm Name</label>
 					<input type="text" name="realm" id="realm" class="required" placeholder="Greymane" />
 				</p>
-				<button id="charLookup" type="button">Find Hero</button>
+				<button class="btn findBtn" id="charLookup" type="button">Find Hero</button>
 			</form>
 		</section>
-		<section id="charList">
-			<h3>You have not added any heros yet!</h3>
+		<section class="container text-center" id="charList">
+			<h3 class="text-center">You have not added any heros yet!</h3>
 		</section>
 	</body>
-	<footer>
-		<p>Filler text here for about the page....</p>
-		<img src="img/Footer Alagon.jpg" alt="Algalon the Observer">
+	<footer class="d-flex justify-content-between">
+		<ul>
+			<li>All credit for art and character information goes to Blizzard Entertainment</li>
+			<li>Site designed and created by Mayjenta Malzahn, 2019</li>
+		</ul>
+		<img class="img-fluid" src="img/Footer Alagon.jpg" alt="Algalon the Observer">
 	</footer>
+		</div>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
