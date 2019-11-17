@@ -36,6 +36,15 @@ function getTalents(nam,realm){
 	this.realm = realm;
 	this.nam = nam;
 		fetch('https://us.api.blizzard.com/wow/character/'+this.realm+'/'+this.nam+'?fields=talents&locale=en_US&access_token='+token["access_token"])
+	.then(function(response){
+		  if(!response.ok){
+			  //unfortunately, the api only returns "not found", not if the realm or character is the problem.
+			window.alert("Character or Realm "+response.statusText);
+			  return;
+		}
+			return response;
+		  }
+		 )
 		.then((resp)=> resp.json())
 		.then(function (data)
 		{
