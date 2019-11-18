@@ -1,7 +1,9 @@
 # Project and Portfolio 4
 
 This project allows the user to input their character name and realm, add characters too a team, and view extra character information.
-GitHub Link:
+
+GitHub Link: https://github.com/MayMalzahn/Project-and-Portfolio-4
+
 In case you are not familiar with World of Warcraft, here are some name-realm pairs you can input to see the site in action:
 Maethrya - Greymane
 
