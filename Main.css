@@ -10,6 +10,7 @@ img.small{width:auto;}
 img.smallSet{width:50px;}
 article{background-color:black;color:white;margin:15px;border-radius: 10px; border:thick groove #8835A7;}
 .port{border: thick double #696B1E;border-radius: 10px;}
+.Bigport{border: thick double #696B1E;border-radius: 10px;height: 200px;width: 200px;}
 ul{list-style: none;bottom:0;}
 .warrior{color:saddlebrown;}
 .mage{color:cornflowerblue}

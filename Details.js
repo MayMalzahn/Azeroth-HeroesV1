@@ -30,7 +30,7 @@ function view(){
 				else if(gcharArray[0].clas == "Mage"){de.innerHTML='<h3 class="mage text-center">'+charArray[0].nam+'</h3>';}
 			let dis = '';
 			dis+='<article class="text-center">';
-			dis+='<img class="text-center port" src = http://render-us.worldofwarcraft.com/character/'+charArray[0].thumb+'>';
+			dis+='<img class="text-center Bigport" src = http://render-us.worldofwarcraft.com/character/'+charArray[0].thumb+'>';
 			dis+='<h4>'+charArray[0].clas+'</h4>';
 			dis+='<p>'+charArray[0].realm+'</p>';
 			dis+='<p>Level: '+charArray[0].lvl+'</p>';
