@@ -1,13 +1,18 @@
 # Project and Portfolio 4
 
 This project allows the user to input their character name and realm, add characters too a team, and view extra character information.
-
+GitHub Link:
 In case you are not familiar with World of Warcraft, here are some name-realm pairs you can input to see the site in action:
 Maethrya - Greymane
+
 Maeloa - Greymane
+
 Caleo - Emerald Dream
+
 Naros - Emerald Dream
+
 Shamae - Greymane
+
 Angrymae - Greymane
 
 Most of these characters will have the same number for achivement points - not a bug. Achivement points are account wide, and those characters share an account.
