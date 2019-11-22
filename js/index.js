@@ -116,7 +116,7 @@ class View{
 			}
 			dis+='<p>Achivement Points: '+a[i].achiv+'</p>';
 			dis+='<p>Honorable Kills: '+a[i].hk+'</p>';
-			dis+=`<button class="btn add align-self-end" id="charAdd`+i+`" type="button" onclick="teamAdd('`+a[i].nam+`','`+a[i].realm+`')">Add to Team</button>`;
+			dis+=`<button class="btn add align-self-end" id="charAdd`+i+`" type="button" onclick="teamAdd('`+a[i].nam+`','`+a[i].realm+`','`+a[i].fac+`')">Add to Team</button>`;
 			dis+='<button class="btn del align-self-end" id="charSubtract'+i+'" type="button" onclick="delChar('+i+')">Delete</button>';
 			dis+='</article>';
 			darow.insertAdjacentHTML('beforeend',dis);
@@ -132,20 +132,25 @@ function delChar(num){
 	charArray.splice(num,1);
 	document.dispatchEvent(new Event("view_ready"));
 }
-function teamAdd(name,realm){
+function teamAdd(name,realm,fac){
 	if(teamArray == null){
 		teamArray = [];
 		this.name = name;
 	this.realm = realm;
-	teamArray.push({"nam":name,"realm":realm})
+		this.fac = fac;
+	teamArray.push({"nam":name,"realm":realm,"fac":fac})
 	window.alert(name+' from '+realm+' added to team.');}
 	else if(charValidate(name,realm,teamArray)){
 		window.alert(name+' from '+realm+' is already on your team!');
 	}
+	else if(facValidate(name,realm,teamArray,charArray)){
+		window.alert(name+" is from a different faction than the rest of the team. They cannot team up.");
+	}
 	else if(teamArray.length <= 4 && teamArray != null){
 	this.name = name;
 	this.realm = realm;
-	teamArray.push({"nam":name,"realm":realm})
+		this.fac = fac;
+	teamArray.push({"nam":name,"realm":realm,"fac":fac})
 	window.alert(name+' from '+realm+' added to team.');}
 	else{
 		window.alert("Cannont add hero to team. Team is full! Head to the team page to remove another hero.");
@@ -174,6 +179,27 @@ function charValidate(nam,realm,arr){
 			continue;
 		}
 	}
+	return false;
+}
+
+function facValidate(nam,realm,arr,arr2){
+	this.nam = nam;
+	this.realm = realm;
+	this.samName = arr2.filter(x => x.nam === nam);
+	console.log(samName);
+	this.fac = samName.find(x => x.realm === realm).fac;
+	console.log(fac);
+	for(y = 0; y < arr.length; y++){
+		if(this.fac != arr[y].fac){
+			console.log(arr[y].fac);
+			console.log("Character of different faction");
+			return true;
+		}
+		else{
+			continue;
+		}
+	}
+	console.log("Character of same faction");
 	return false;
 }
 

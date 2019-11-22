@@ -5,9 +5,10 @@ This project allows the user to input their character name and realm, add charac
 GitHub Link: https://github.com/MayMalzahn/Project-and-Portfolio-4
 
 In case you are not familiar with World of Warcraft, here are some name-realm pairs you can input to see the site in action:
+
 Maethrya - Greymane
 
-Maeloa - Greymane
+Maeloa - Greymane - this character cannot team with the others listed, as she is of a different faction.
 
 Caleo - Emerald Dream
 
@@ -34,7 +35,7 @@ Priests names are a pale golden color rather than white, the offical priest colo
 Cut features:
 Wanted to be able to calculate if you had a full team on the team page (1 tank, 1 healer, 3 dps) but I have run out of time to fully impliment and test this.
 
-Should not be able to add characters of different factions to the same team. Cut due to time constraints.
+ADDED!Should not be able to add characters of different factions to the same team. Cut due to time constraints.!
 
 Wanted the character name, class, and realm to be beside the portrait on the home and team pages, rather than below. Cut because CSS makes me want to tear my hair out, and I could not get it working.
 

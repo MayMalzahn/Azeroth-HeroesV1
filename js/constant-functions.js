@@ -57,7 +57,8 @@ function getTalents(nam,realm){
 			let hk = data.totalHonorableKills;
 			let talents = data.talents;
 			let role = data.talents[0].spec.role;
-			let temp = char.createChar(name,realm,clas,level,achiv,thumb,hk,talents,role);
+			let fac = data.faction;
+			let temp = char.createChar(name,realm,clas,level,achiv,thumb,hk,talents,role,fac);
 			console.log(data);
 			charArray.push(temp);
 			let isDetail = document.getElementById("detail");
