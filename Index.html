@@ -4,29 +4,35 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		<link rel="stylesheet" href="css/Main.css">
+		<link href="https://fonts.googleapis.com/css?family=Ibarra+Real+Nova&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/main.css">
 		<title>Main</title>
 	</head>
 	<div class="main-container">
 	<body>
 		<header class="d-flex justify-content-between">
-			<img class="headLogo rounded-circle " src="img/logo.jpg" alt="Logo">
+			<img class="headLogo rounded-circle" src="img/logo.jpg" alt="Logo">
 			<h1 class="">Azeroth Hero Tracker</h1>
-			<nav class="nav nav-pills flex-column ">
+			<img class="headLogo" src="img/home-img.png" alt="thrall">
+		</header>
+			<nav class="navbar navbar-light justify-content-center">
 				<a class="nav-link" href="Index.html">Home</a>
 				<a class="nav-link" href="Team.html">Team</a>
 			</nav>
-		</header>
 		<h2 class="text-center">Your Heroes</h2>
 		<section  id="input">
 			<form class="d-flex justify-content-center" id="inputForm" method="post" action="">
 				<p class="inp">
 					<label for="name">Character Name</label>
+					<p class="inp">
 					<input type="text" name="name" id="name" class="required" placeholder="Maethrya" />
+				</p>
 				</p>
 				<p class="inp">
 					<label for="realm">Realm Name</label>
+					<p class="inp">
 					<input type="text" name="realm" id="realm" class="required" placeholder="Greymane" />
+			</p>
 				</p>
 				<button class="btn findBtn" id="charLookup" type="button">Find Hero</button>
 			</form>
@@ -46,9 +52,9 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	<script src="js/OnLoadCheck.js"></script>
-	<script src="js/Constant Functions.js"></script>
-	<script src="js/CharClasses.js"></script>
-	<script src="js/CharFactory.js"></script>
-	<script src = "js/Index.js"></script>
+	<script src="js/on-load-check.js"></script>
+	<script src="js/constant-functions.js"></script>
+	<script src="js/char-classes.js"></script>
+	<script src="js/char-factory.js"></script>
+	<script src = "js/index.js"></script>
 </html>

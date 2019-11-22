@@ -1,13 +1,14 @@
 @charset "utf-8";
 /* CSS Document */
 html{margin: 0;padding:0;height: 100%;position: relative;}
-header,footer{background-color: black;color:white;display: inline-block;width: 100%;height: 50px;position:absolute;}
-header{top:0;border-bottom: thick ridge rebeccapurple}
+header,footer{background-color: black;color:white;display: inline-block;width: 100%;height: 100px;position:absolute;}
+header{top:0;border-bottom: thick ridge rebeccapurple;overflow: hidden;}
 footer{height: 100px;position: absolute;bottom: 0;padding-bottom: 0;margin-bottom: 0; border-top: thick ridge rebeccapurple;}
 footer img{border-left:thin double palegoldenrod;width: 100px;}
-body{background-color:#333333;color:azure;}
+body{background-color:#333333;color:azure;font-family: 'Ibarra Real Nova', serif;}
 img.small{width:auto;}
 img.smallSet{width:50px;}
+h1{text-shadow:2px 2px #612463;}
 article{background-color:black;color:white;margin:15px;border-radius: 10px; border:thick groove #8835A7;}
 .port{border: thick double #696B1E;border-radius: 10px;}
 .Bigport{border: thick double #696B1E;border-radius: 10px;height: 200px;width: 200px;}
@@ -28,10 +29,10 @@ ul{list-style: none;bottom:0;}
 .add{background-color:lawngreen}
 .port{margin-top: 5px;}
 .btn{font-weight: bold;margin-bottom: 0;border:thin solid black}
-.findBtn{background-color:black;color:white;height:30px;margin-left: 15px;}
-.inp{margin-left: 15px;}
-.nav-link{height: 45%;padding-top: 0;background-color:palegoldenrod;border:thin solid black;color:black;}
-.headLogo{object-fit:cover;height: 50px;}
+.findBtn{background-color:black;color:white;height:30px;margin-left: 15px;margin-top:10px;}
+.inp{margin-left: 15px;margin-top:10px;}
+.nav-link{height: 45%;padding-top: 0;border:thin solid black;color:paleturquoise;}
+.headLogo{object-fit:contain;height: 100px;}
 .main-container{min-height: 100vh;overflow: hidden;display: block;position: relative;padding-bottom: 200px;padding-top: 50px;}
 @media(max-width:370px){
 	header{
