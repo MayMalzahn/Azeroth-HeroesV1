@@ -24,7 +24,7 @@ Known issues:
 
 The Blizzard API does not supply a specific error if it cannot find the character you are looking for. The problem can be in either the character or realm name, but since I do not get specific information back the error has to be generic.
 
-You can add the same character multiple times to the team.
+FIXED!You can add the same character multiple times to the team.!
 
 Demon Hunters name color may be too dark to be easily seen by the visually impaired. However, it is the same color (roughly) as the official sites use for that class. I cannot make it lighter as Warlocks have a lighter purple.
 
