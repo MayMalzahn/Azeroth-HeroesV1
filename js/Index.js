@@ -22,7 +22,7 @@ window.addEventListener("DOMContentLoaded",function()
 var charArray = [];		
 function charFill(){
 	var e = JSON.parse(sessionStorage.getItem("loadedToons"));
-	if(e.length == 0){return;}
+	if(e.length == 0 || e == null){return;}
 	else{
 		charArray = JSON.parse(sessionStorage.getItem("loadedToons"));
 	}
@@ -62,8 +62,13 @@ class Controller{
 	sub(){
 		this.nam = document.getElementById("name").value;
 		this.realm = document.getElementById("realm").value;
+		if(charValidate(this.nam,this.realm,charArray) && charArray != null){
+			window.alert("You have already added this character!")
+		}
+		else{
 		this.realm.replace(' ','-'); //some realm names have a space. this needs to be a - for the api address.
 		this.temp = getTalents(this.nam,this.realm);
+		}
 		
 	}
 }
@@ -134,7 +139,9 @@ function teamAdd(name,realm){
 	this.realm = realm;
 	teamArray.push({"nam":name,"realm":realm})
 	window.alert(name+' from '+realm+' added to team.');}
-	
+	else if(charValidate(name,realm,teamArray)){
+		window.alert(name+' from '+realm+' is already on your team!');
+	}
 	else if(teamArray.length <= 4 && teamArray != null){
 	this.name = name;
 	this.realm = realm;
@@ -154,6 +161,20 @@ function allToons(toons){
 }
 function loadTeam(){
 	teamArray = JSON.parse(sessionStorage.getItem("teamArray"));
+}
+
+function charValidate(nam,realm,arr){
+	this.nam = nam.charAt(0).toUpperCase()+nam.slice(1);
+	this.realm = realm.charAt(0).toUpperCase()+realm.slice(1);
+	for(y = 0; y < arr.length; y++){
+		if(this.nam === arr[y].nam && this.realm === arr[y].realm){
+			return true;
+		}
+		else{
+			continue;
+		}
+	}
+	return false;
 }
 
 						  
