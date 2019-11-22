@@ -44,7 +44,7 @@ function teamDisplay(g){
 			for(var i = 0; i < g.length; i++){
 				let dis = '';
 				dis+='<article class="">';
-				dis+='<a href="Details.html"><img class="port" src = "http://render-us.worldofwarcraft.com/character/'+g[i].thumb+'" alt="'+g[i].nam+'" onclick="detailClick('+i+')"></a>';
+				dis+='<a href="details.html"><img class="port" src = "http://render-us.worldofwarcraft.com/character/'+g[i].thumb+'" alt="'+g[i].nam+'" onclick="detailClick('+i+')"></a>';
 					dis+='<div class="col">';
 				if(g[i].clas == "Warrior"){dis+='<h3 class="warrior">'+g[i].nam+'</h3>';}
 				else if(g[i].clas == "Druid"){dis+='<h3 class="druid">'+g[i].nam+'</h3>';}

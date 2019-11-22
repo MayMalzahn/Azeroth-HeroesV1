@@ -89,7 +89,7 @@ class View{
 		for(var i = 0; i < a.length; i++){
 			let dis = '';
 			dis+='<article class="">';
-			dis+='<a href="Details.html"><img class="port"  src = "http://render-us.worldofwarcraft.com/character/'+a[i].thumb+'" alt="'+a[i].nam+'" onclick="detailClick('+i+')"></a>';
+			dis+='<a href="details.html"><img class="port"  src = "http://render-us.worldofwarcraft.com/character/'+a[i].thumb+'" alt="'+a[i].nam+'" onclick="detailClick('+i+')"></a>';
 			if(a[i].clas == "Warrior"){dis+='<h3 class="warrior">'+a[i].nam+'</h3>';}
 				else if(a[i].clas == "Druid"){dis+='<h3 class="druid">'+a[i].nam+'</h3>';}
 				else if(a[i].clas == "Death Knight"){dis+='<h3 class="dk">'+a[i].nam+'</h3>';}
