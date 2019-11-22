@@ -20,6 +20,7 @@ var token = JSON.parse(getToken());
 			request.setRequestHeader("Authorization","Basic "+btoa(id+":"+secret));
 		},
 		headers: {//makes the grant_type work. Ill admit I am not sure why
+				'Access-Control-Allow-Headers': 'x-requested-with',
 				'Content-Type': 'application/x-www-form-urlencoded',
 				 "accepts": "application/json"},
 		body: grant,
