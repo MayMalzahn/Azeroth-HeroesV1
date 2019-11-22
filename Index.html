@@ -8,8 +8,8 @@
 		<link rel="stylesheet" href="css/main.css">
 		<title>Main</title>
 	</head>
-	<div class="main-container">
 	<body>
+			<div class="main-container">
 		<header class="d-flex justify-content-between">
 			<img class="headLogo rounded-circle" src="img/logo.jpg" alt="Logo">
 			<h1 class="">Azeroth Hero Tracker</h1>
@@ -21,18 +21,18 @@
 			</nav>
 		<h2 class="text-center">Your Heroes</h2>
 		<section  id="input">
-			<form class="d-flex justify-content-center" id="inputForm" method="post" action="">
+			<form class="d-flex justify-content-center" id="inputForm" method="post">
 				<p class="inp">
 					<label for="name">Character Name</label>
-					<p class="inp">
-					<input type="text" name="name" id="name" class="required" placeholder="Maethrya" />
 				</p>
+				<p class="inp">
+					<input type="text" name="name" id="name" class="required" placeholder="Maethrya" />
 				</p>
 				<p class="inp">
 					<label for="realm">Realm Name</label>
+					</p>
 					<p class="inp">
 					<input type="text" name="realm" id="realm" class="required" placeholder="Greymane" />
-			</p>
 				</p>
 				<button class="btn findBtn" id="charLookup" type="button">Find Hero</button>
 			</form>
@@ -45,10 +45,9 @@
 					<li>All credit for art and character information goes to Blizzard Entertainment</li>
 					<li>Site designed and created by Mayjenta Malzahn, 2019</li>
 				</ul>
-				<img class="img-fluid" src="img/Footer Alagon.jpg" alt="Algalon the Observer">
+				<img class="img-fluid" src="img/Footer-Alagon.jpg" alt="Algalon the Observer">
 			</footer>
-	</body>
-		</div>
+			</div>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -57,4 +56,5 @@
 	<script src="js/char-classes.js"></script>
 	<script src="js/char-factory.js"></script>
 	<script src = "js/index.js"></script>
+	</body>
 </html>
