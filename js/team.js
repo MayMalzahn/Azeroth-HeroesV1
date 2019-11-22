@@ -9,7 +9,7 @@ window.addEventListener("DOMContentLoaded",function()
 var charArray = [];
 function teamFill(){
 	var e = JSON.parse(sessionStorage.getItem("teamArray"));
-	if(e.length == 0 || e == null){document.dispatchEvent(new Event("Teamgo"));}
+	if(e == null || e.length == 0){document.dispatchEvent(new Event("Teamgo"));}
 	else{
 	for(var k = 0;k<e.length;k++){
 		this.nam = e[k].nam;
