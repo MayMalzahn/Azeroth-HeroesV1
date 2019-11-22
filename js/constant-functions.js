@@ -17,7 +17,7 @@ var token = JSON.parse(getToken());
 		data:{"grant_type":"client_credentials"},
 		beforeSend: function(request)
 		{	//sends the id and secret to log in
-			request.setRequestHeader("Authorization","Basic "+btoa(id+":"+secret),"Access-Control-Request-Headers: x-requested-with");
+			request.setRequestHeader("Authorization","Basic "+btoa(id+":"+secret));
 		},
 		headers: {//makes the grant_type work. Ill admit I am not sure why
 				'Content-Type': 'application/x-www-form-urlencoded',
@@ -35,7 +35,7 @@ var token = JSON.parse(getToken());
 function getTalents(nam,realm){
 	this.realm = realm;
 	this.nam = nam;
-		fetch('https://us.api.blizzard.com/wow/character/'+this.realm+'/'+this.nam+'?fields=talents&locale=en_US&access_token='+token["access_token"])
+		fetch('https://us.api.blizzard.com/wow/character/'+this.realm+'/'+this.nam+'?fields=talents&locale=en_US&access_token='+token["access_token"]){mode:'no-cors';}
 	.then(function(response){
 		  if(!response.ok){
 			  //unfortunately, the api only returns "not found", not if the realm or character is the problem.
