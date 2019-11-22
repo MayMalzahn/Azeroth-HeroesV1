@@ -17,10 +17,9 @@ var token = JSON.parse(getToken());
 		data:{"grant_type":"client_credentials"},
 		beforeSend: function(request)
 		{	//sends the id and secret to log in
-			request.setRequestHeader("Authorization","Basic "+btoa(id+":"+secret));
+			request.setRequestHeader("Authorization","Basic "+btoa(id+":"+secret),"Access-Control-Request-Headers: x-requested-with");
 		},
 		headers: {//makes the grant_type work. Ill admit I am not sure why
-				'Access-Control-Allow-Headers': 'x-requested-with',
 				'Content-Type': 'application/x-www-form-urlencoded',
 				 "accepts": "application/json"},
 		body: grant,
