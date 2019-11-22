@@ -22,7 +22,7 @@ window.addEventListener("DOMContentLoaded",function()
 var charArray = [];		
 function charFill(){
 	var e = JSON.parse(sessionStorage.getItem("loadedToons"));
-	if(e.length == 0 || e == null){return;}
+	if( e == null || e.length == 0){return;}
 	else{
 		charArray = JSON.parse(sessionStorage.getItem("loadedToons"));
 	}
