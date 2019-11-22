@@ -34,7 +34,7 @@ ul{list-style: none;bottom:0;}
 .nav-link{height: 45%;padding-top: 0;border:thin solid black;color:paleturquoise;}
 .headLogo{object-fit:contain;height: 100px;}
 .main-container{min-height: 100vh;overflow: hidden;display: block;position: relative;padding-bottom: 200px;padding-top: 50px;}
-@media(max-width:370px){
+@media(max-width:375px){
 	header{
 		font-size:1em;
 	}
