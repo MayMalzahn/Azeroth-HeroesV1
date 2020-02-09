@@ -21,7 +21,8 @@ var token = JSON.parse(getToken());
 		},
 		headers: {//makes the grant_type work. Ill admit I am not sure why
 				'Content-Type': 'application/x-www-form-urlencoded',
-				 "accepts": "application/json"},
+				 "accepts": "application/json",
+				'Access-Control-Allow-Headers' : 'x-requested-with'},
 		body: grant,
 		async:false,
 		success:function(data)
